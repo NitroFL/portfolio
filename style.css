@@ -1,0 +1,124 @@
+body {
+  background-color: #fff;
+  color: #222;
+  font-family: "Nunito","Sans-serif","Arial";
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #fefefe;
+  padding: 15px 40px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin: 1.5rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: rgb(37, 81, 226);
+}
+
+/* Hero Section */
+.hero {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+    font-weight: bold;
+}
+
+.cta-buttons {
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.75em 1.5em;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid #0e2a47;
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 0 #0e2a47;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #0e2a47;
+}
+
+.button i {
+  font-size: 1.1em;
+}
+
+/* Green variant */
+.button-blue {
+  background-color: #60e4c6;
+  color: #0e2a47;
+}
+
+/* Yellow variant */
+.button-yellow {
+  background-color: #ffd43b;
+  color: #0e2a47;
+}
+
+
+
+
+/* Project Cards */
+main {
+  padding: 40px;
+}
+
+.project-card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h2 {
+  margin-top: 0;
+}
+
+.contact-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-list li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
