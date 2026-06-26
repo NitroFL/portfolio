@@ -122,3 +122,68 @@ main {
   font-size: 1.1rem;
   font-weight: 500;
 }
+
+.toggle-btn {
+  display: none;
+  font-size: 1.5rem;
+  background-color: #fefefe;
+  border: none;
+  color: rgb(22, 22, 21);
+  cursor: pointer;
+}
+  .cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px; /* space between buttons */
+  margin-top: 20px;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px; /* vertical spacing */
+  }
+
+  .button {
+    width: 80%;       /* optional: make buttons wider */
+    max-width: 300px; /* optional: prevent them getting too wide */
+    justify-content: center;
+  }
+
+    .toggle-btn {
+    display: block;
+    }
+
+    .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fefefe;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    }
+
+    .nav-links.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    }
+
+  .nav-links a {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
