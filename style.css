@@ -150,12 +150,12 @@ main {
     .cta-buttons {
     flex-direction: column;
     align-items: center;
-    gap: 12px; /* vertical spacing */
+    gap: 12px; 
   }
 
   .button {
-    width: 80%;       /* optional: make buttons wider */
-    max-width: 300px; /* optional: prevent them getting too wide */
+    width: 80%;       
+    max-width: 300px;
     justify-content: center;
   }
 
@@ -172,7 +172,7 @@ main {
   top: 100%;
   left: 0;
   z-index: 1000;
-  position: absolute
+  position: absolute;
   opacity: 0;
   transform: translateY(-20px);
   pointer-events: none;
