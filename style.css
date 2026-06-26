@@ -164,24 +164,19 @@ main {
     }
 
   .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: #fefefe;
-    z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    visibility: hidden;
-  }
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fefefe;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+}
 
-    .nav-links.active {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-    visibility: visible;
-    }
+.nav-links.active {
+  display: flex;
+}
 
 .nav-links a {
   display: block;
