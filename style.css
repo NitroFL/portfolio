@@ -156,19 +156,21 @@ main {
     display: block;
     }
 
-    .nav-links {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: #fefefe;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    opacity: 0;
-    transform: translateY(-20px);
-    pointer-events: none;
-    transition: all 0.3s ease;
-    }
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fefefe;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
 
     .nav-links.active {
     opacity: 1;
@@ -176,10 +178,13 @@ main {
     pointer-events: auto;
     }
 
-  .nav-links a {
-    text-align: center;
-    padding: 1rem 0;
-  }
+.nav-links a {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 1rem 0;
+  text-align: center;
+}
 
   main {
     flex-direction: column;
