@@ -163,21 +163,17 @@ main {
     display: block;
     }
 
-.nav-links {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background-color: #fefefe;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  position: absolute;
-  opacity: 0;
-  transform: translateY(-20px);
-  pointer-events: none;
-  transition: all 0.3s ease;
-}
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fefefe;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
 
     .nav-links.active {
     opacity: 1;
